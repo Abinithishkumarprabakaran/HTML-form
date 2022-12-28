@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <style>
+        .form{
+            margin: 10px;
+        }
+        input{
+            /* padding: 10px; */
+            margin: 10px;
+        }
+
+        th, td{
+            border: 2px solid rgb(255, 81, 0);
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form">
+        <form id="form-submit">
+            <label>Enter your First Name: </label><input type="text" placeholder="First Name"><br>
+            <label>Enter your Last Name: </label><input type="text" placeholder="Last Name"><br>
+            <label>Enter your Address: </label><input type="text" placeholder="Address"><br>
+            <label>Enter your Pincode: </label><input type="number" placeholder="Pincode"><br>
+            <label>Enter your State: </label><input type="text" placeholder="State"><br>
+            <label>Enter your Country: </label><input type="text" placeholder="Country"><br>
+            <label>Enter your Gender: </label><input type="text" placeholder="Gender"><br>
+            <label>Enter your Choice of food: </label><input type="text" placeholder="Choice" multiple><br>
+            <div class="btn-group">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select atleast 2 Food from here
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Briyani</a></li>
+                        <li><a class="dropdown-item" href="#">Fried rice</a></li>
+                        <li><a class="dropdown-item" href="#">Meals</a></li>
+                        <li><a class="dropdown-item" href="#">Idli</a></li>
+                        <li><a class="dropdown-item" href="#">Dosa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Gender</th>
+                <th>Choice of food</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+<script src="./script.js"></script>
+</html>
